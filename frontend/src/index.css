@@ -3,3 +3,10 @@ main{
 
  min-height : 85vh
 }
+
+.rating span {
+  margin: 0.2rem;
+}
+h4{
+  padding: 1rem  0 ;
+}
