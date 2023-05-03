@@ -7,7 +7,7 @@ const ProductList = () => {
   
   const getData = async () => {
     try {
-      const response = await axios.get('http://localhost:3001/api/products');
+      const response = await axios.get('http://localhost:3002/api/products');
       await setQb(response.data);
     } catch (error) {
       console.log(error);
@@ -21,11 +21,6 @@ const ProductList = () => {
   
   return (
     <>
-    <div>
-       
-    <h1>This is a test title in ProductList Component </h1>
-    <h3>expecting  a list of product</h3>
-    </div>
 
       {qb.map((product) => (
         <div key={product.ID}>
