@@ -15,6 +15,8 @@ const { authMiddleware } = require('../../utils/auth');
 
 router.route('/login').post(login);
 
+router.post('/')
+
 // router.route('/me').get(authMiddleware, getSingleUser);
 
 // router.route('/books/:bookId').delete(authMiddleware, deleteBook);
